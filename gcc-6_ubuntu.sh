@@ -2,8 +2,7 @@
 
 which gcc-6 || {
   sudo apt-get install -y software-properties-common
-  sudo add-apt-repository ppa:ubuntu-toolchain-r/test <<EOF
-EOF
+  sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
   sudo apt-get update
   sudo apt-get install -y gcc-6 g++-6
   sudo update-alternatives --remove-all gcc
