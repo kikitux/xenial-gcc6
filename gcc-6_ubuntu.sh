@@ -16,4 +16,7 @@ which gcc-6 g++-6 gfortran-6 || {
   sudo update-alternatives --config gcc                                                                                                                                                                                                   
   sudo update-alternatives --config g++                                                                                                                                                                                                   
   sudo update-alternatives --config gfortran                                                                                                                                                                                              
+} && {
+  sudo apt-get update
+  sudo apt-get install --only-upgrade -y gcc-6 g++-6 gfortran-6
 }
