@@ -1,7 +1,9 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+# curl -sSL https://raw.githubusercontent.com/kikitux/xenial-gcc6/master/gcc-6_ubuntu.sh | bash
 
 which gcc-6 g++-6 gfortran-6 || {                                                                                                                                                                                                         
-  sudo apt-get install -y software-properties-common lsb_release                                                                                                                                                                          
+  sudo apt-get install -y software-properties-common                                                                                                                                                                     
   sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test                                                                                                                                                                                  
   sudo apt-get update                                                                                                                                                                                                                     
   sudo apt-get install -y gcc-6 g++-6 gfortran-6                                                                                                                                                                                          
