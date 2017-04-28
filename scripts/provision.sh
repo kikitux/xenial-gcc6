@@ -23,3 +23,7 @@ else
   sudo apt-get update
   sudo apt-get install --only-upgrade -y gcc-6 g++-6 gfortran-6
 fi
+
+gcc --version
+g++ --version
+gfortran --version
